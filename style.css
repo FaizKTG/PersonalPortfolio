@@ -1,0 +1,345 @@
+body {
+    background-color: rgba(40, 40, 40, 1);
+    font-family:Inter, Helvetica, sans-serif;
+    background: url("Images/Background.jpg") no-repeat fixed center center;
+    margin: 0;
+    background-size: cover;
+}
+body::-webkit-scrollbar {
+    width: 10px;
+}
+body::-webkit-scrollbar-track {
+    background: rgb(24, 24, 24); 
+}
+body::-webkit-scrollbar-thumb {
+    background: rgb(79, 79, 79); 
+}
+
+@font-face {
+    font-family: Inter;
+    src: url(Fonts/Inter-VariableFont_slnt\,wght.ttf);
+}
+
+.Menu {
+    background-color: rgba(41, 42, 47, 1);
+    width: 21.5%;
+    height: 100vh;
+    position:fixed;
+    padding-top: 10px;
+    background: linear-gradient(180deg, rgba(41, 42, 47, 0.766) 0%, rgba(54, 195, 195, 0.08) 100%);
+    backdrop-filter: blur(25px);
+    display: flex; 
+    flex-direction: column;  
+    justify-content: center;  
+}
+
+.NameAndSkill {
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+.PFP {
+    background: rgba(19, 19, 19, 0.5);
+    background-image: url(Images/PFP.jpg);
+    background-size: 120%; 
+    background-position: center;
+    border: 2px solid rgba(0, 0, 0, 0.13);
+    border-radius: 100%;
+    height: 101px;
+    width: 101px;
+    margin-left: auto;
+    margin-right: auto;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.25);
+    transition:
+        background-size 1s ease-in-out;
+}
+.PFP:hover {
+    background-size: 115%; 
+}
+.Name {
+    color: white;
+    font-size: 30px;
+    margin-top: 10px;
+}
+.Skill {
+    color: #989898;
+    font-size: 20px;
+}
+
+.Buttons {
+    display: block;
+    margin-top: 40px;
+}
+.Button {
+    background-color: rgba(240, 240, 240, 0.21);
+    color: rgba(255, 255, 255, 0.522);
+    border-radius: 10px;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.25);
+    width: 60%;
+    height: 40px;
+    margin-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    cursor: default;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 20px;
+
+    transition: 
+        background-color 0.3s ease-in-out,
+        color 0.3s ease;
+}
+.Button:hover {
+    background-color: rgba(240, 240, 240, 0.3);
+    color: rgb(255, 255, 255);
+}
+
+.MainElements {
+    display: flex;
+    flex-wrap: wrap; 
+    position: absolute;
+    gap: 40px;
+    left: 24%;
+    top: 10%;
+}
+.ElementSection {
+    border-radius: 18px;
+    border: 2px solid rgba(255, 255, 255, 0.50);
+    backdrop-filter: blur(25px);
+    width: 94%;
+    padding: 10px;
+
+    color: white;
+    font-size: 30px;
+    transition: 
+        border 1s ease,
+        opacity 1s ease, transform 1s ease !important;
+}
+.ElementSection:hover {
+    border: 2px solid rgba(255, 255, 255, 0.741);
+}
+
+.SectionVisible {
+    transform: translate(0px) !important; 
+    opacity: 1 !important;
+}
+
+/*ABOUT*/
+.AboutSection {
+    background: linear-gradient(180deg, rgba(29, 118, 200, 0.60) 0%, rgba(138, 139, 139, 0.08) 100%);
+}
+.Title {
+    margin-top: 20px;
+    margin-left: 10px;
+}
+
+.bio {
+    margin-top: 20px;
+    margin-left: 10px;
+    font-size: 20px;
+    color: rgb(219, 219, 219);
+}
+.skillSection {
+    display: flex;
+    flex-wrap: wrap;
+}
+.skillSet {
+    margin-top: 20px;
+    margin-left: 10px;
+    font-size: 13px;
+    padding: 7px 5px; 
+    background-color: #262626;
+    border-radius: 25px;
+    color: #B0B0B0;
+    white-space: nowrap;
+}
+
+
+
+/*Education*/
+.EducationSection {
+    background: linear-gradient(180deg, rgba(206, 222, 218, 0.373) 0%, rgba(26, 96, 161, 0.08) 100%);
+    height: 70%;
+    top: 70%;
+    transform: translate(5px);
+    opacity: 0;
+}
+.EducationElement {
+    width: 700px;
+    height: 68px;
+    margin-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    font-size: 25px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+    border: 2px solid rgba(255, 255, 255, 0.13);
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.25);
+    transition: border 1s ease;
+    cursor: default;
+}
+.EducationElement:hover {
+    border: 2px solid rgb(255, 255, 255);
+}
+.USTHBLOGO {
+    background-image: url(Images/WhiteUSTHBLogo.png);
+    background-size: 100%; 
+    background-position: center;
+    height: 150px;
+    width: 150px;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+.SonicImpatient {
+    background-image: url(Images/SonicImpatient.gif);
+    image-rendering: pixelated;
+    background-size: 100%; 
+    background-position: center;
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    margin-top: 20px;
+    cursor: pointer;
+}
+.ClickMe {
+    background-image: url(Images/sonicText1.png);
+    image-rendering: pixelated;
+    background-size: 100%; 
+    background-position: center;
+    position: absolute;
+    width: 80px;
+    height: 80px;
+    margin-left: 80px;
+    animation: fadeText 8s ease-in-out infinite;
+}
+@keyframes fadeText {
+    0% {opacity: 0;}
+    25% {opacity: 0}
+    75% {opacity: 1;}
+    100% {opacity: 0;}
+}
+
+.EducationDetail {
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.25);
+}
+.University {background: rgba(0, 87, 255, 0.2);}
+.Field {background: rgba(255, 242, 0, 0.2);}
+.Specialty {background: rgba(251, 97, 62, 0.2);}
+
+.EducationTitle {
+    margin-top: 20px;
+    margin-left: 10px;
+}
+
+
+/*Projects*/
+.ProjectSection {
+    background: linear-gradient(180deg, rgba(0, 146, 166, 0.60) 0%, rgba(93, 37, 255, 0.08) 100%);
+    height: 380%;
+    top: 150%;
+    transform: translate(5px);
+    opacity: 0;
+}
+.ProjectTitle {
+    margin-top: 20px;
+    margin-left: 10px;
+}
+/*Ghosted Guns*/
+.ProjectTinyTitle {
+    margin-top: 20px;
+    margin-left: 10px;
+    font-size: 20px;
+    color: rgb(219, 219, 219);
+}
+.TinyTitle {
+    font-size: 25px;
+    color: white;
+}
+.GGImage {
+    width: 99%; 
+    margin-top: 10px;
+    height: auto; 
+    border-radius: 10px;
+}
+.GGPixelArt {
+    width: 99%; 
+    margin-top: 10px;
+    height: auto; 
+    image-rendering: pixelated;   
+}
+
+.RenderDisplay {
+    display: flex;
+    gap: 10px;
+}
+.RenderImage {
+    width: 99%; 
+    margin-top: 10px;
+    height: auto; 
+    border-radius: 10px;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.25);
+}
+.RenderImage-small {
+    width: 49%; 
+    margin-top: 20px;
+    height: auto; 
+    border-radius: 10px;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.25);
+}
+.RenderImage-small-center {
+    width: 49%; 
+    margin-top: 20px;
+    height: auto; 
+    margin-right: auto; margin-left: auto;
+    border-radius: 10px;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.25);
+}
+
+
+.ContactSection {
+    background: linear-gradient(180deg, rgba(19, 228, 57, 0.6) 0%, rgba(26, 96, 161, 0.08) 100%);
+    backdrop-filter: blur(25px);
+    height: 50%;
+    top: 540%;
+    transform: translate(5px);
+    opacity: 0;
+}
+.ContactTitle {
+    margin-top: 20px;
+    margin-left: 10px;
+}
+
+
+
+@media (max-width: 600px){
+    .Menu {
+        display: none;
+    }
+    .MainElements {
+        display: flex;
+        flex-wrap: wrap; 
+        position: absolute;
+        left: 10px;
+        gap: 40px;
+        top: 10%;
+    }
+    .ElementSection {
+        border-radius: 18px;
+        border: 2px solid rgba(255, 255, 255, 0.50);
+        backdrop-filter: blur(25px);
+        width: 94%;
+        padding: 10px;
+    
+        color: white;
+        font-size: 30px;
+        transition: 
+            border 1s ease,
+            opacity 1s ease, transform 1s ease !important;
+    }
+
+}

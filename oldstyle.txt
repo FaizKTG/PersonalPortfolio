@@ -1,0 +1,271 @@
+I'll keep this to remind myself about how AWFUL my coding was last year
+
+body {
+    background-color: rgba(40, 40, 40, 1);
+    font-family:Inter, Helvetica, sans-serif;
+    background: url("Images/Background.jpg") no-repeat fixed center center;
+    margin: 0;
+    background-size: cover;
+}
+@font-face {
+    font-family: Inter;
+    src: url(Fonts/Inter-VariableFont_slnt\,wght.ttf);
+}
+
+.Menu {
+    background-color: rgba(54, 54, 54, 1);
+    width: 26%;
+    height: 80%;
+    position:fixed;
+    top: 10%;
+    left: 10%;
+    border-radius: 18px;
+    padding-top: 10px;
+    grid-gap: 0px;
+    border-radius: 18px;
+    border: 2px solid rgba(255, 255, 255, 0.50);
+    background: linear-gradient(180deg, #2B52DE 0%, rgba(47, 137, 137, 0.08) 100%);
+    backdrop-filter: blur(25px);
+}
+.NameAndSkill {
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+.Name {
+    color: white;
+    font-size: 30px;
+}
+.Skill {
+    color: #989898;
+    font-size: 20px;
+}
+
+.About {
+    background-color: rgba(240, 240, 240, 0.21);;
+    width: 80%;
+    height: 10%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 20px;
+    color: white;
+    border-radius: 20px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.About:hover {
+    background-color: rgba(240, 240, 240, 0.3);
+}
+.Projects {
+    background-color: rgba(240, 240, 240, 0.21);;
+    width: 80%;
+    height: 10%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 20px;
+    color: white;
+    border-radius: 20px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.Projects:hover {
+    background-color: rgba(240, 240, 240, 0.3);
+}
+.Education {
+    background-color: rgba(240, 240, 240, 0.21);;
+    width: 80%;
+    height: 10%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 20px;
+    color: white;
+    border-radius: 20px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.Education:hover {
+    background-color: rgba(240, 240, 240, 0.3);
+}
+.Contact {
+    background-color: rgba(240, 240, 240, 0.21);
+    width: 80%;
+    height: 10%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 20px;
+    color: white;
+    border-radius: 20px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.Contact:hover {
+    background-color: rgba(240, 240, 240, 0.3);
+}
+.AboutSection {
+    border-radius: 18px;
+    border: 2px solid rgba(255, 255, 255, 0.50);
+    background: linear-gradient(180deg, rgba(29, 118, 200, 0.60) 0%, rgba(138, 139, 139, 0.08) 100%);
+    backdrop-filter: blur(25px);
+    width: 50%;
+    height: 50%;
+    position:absolute;
+    top: 10%;
+    left: 40%;
+    padding-top: 10px;
+    grid-gap: 0px;
+    color: white;
+    font-size: 30px;
+}
+.AboutTitle {
+    margin-top: 20px;
+    margin-left: 10px;
+}
+.bio {
+    margin-top: 20px;
+    margin-left: 10px;
+    font-size: 20px;
+    color: rgb(219, 219, 219);
+}
+.skillSection {
+    display: flex;
+}
+.skillSet {
+    margin-top: 20px;
+    margin-left: 10px;
+    font-size: 13px;
+    padding: 7px 5px; /* Adjust as needed for spacing around the text */
+    background-color: #555555;
+    border-radius: 25px;
+    color: #B0B0B0;
+}
+/*Education*/
+.EducationSection {
+    border-radius: 18px;
+    border: 2px solid rgba(255, 255, 255, 0.50);
+    background: linear-gradient(180deg, rgba(95, 169, 154, 0.6) 0%, rgba(26, 96, 161, 0.08) 100%);
+    backdrop-filter: blur(25px);
+    width: 50%;
+    height: 55%;
+    position:absolute;
+    top: 70%;
+    left: 40%;
+    padding-top: 10px;
+    color: white;
+    font-size: 30px;
+}
+.University {
+    width: 654px;
+    height: 68px;
+    margin-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    font-size: 25px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+    background: rgba(0, 87, 255, 0.2);
+}
+.Field {
+    width: 654px;
+    height: 68px;
+    margin-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    font-size: 25px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+    background: rgba(255, 242, 0, 0.2);
+}
+.Specialty {
+    width: 654px;
+    height: 68px;
+    margin-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    font-size: 20px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+    background: rgba(251, 97, 62, 0.2);
+}
+.EducationTitle {
+    margin-top: 20px;
+    margin-left: 10px;
+}
+/*Projects*/
+.ProjectSection {
+    border-radius: 18px;
+    border: 2px solid rgba(255, 255, 255, 0.50);
+    background: linear-gradient(180deg, rgba(0, 146, 166, 0.60) 0%, rgba(93, 37, 255, 0.08) 100%);
+    backdrop-filter: blur(25px);
+    width: 50%;
+    height: 150%;
+    position:absolute;
+    top: 135%;
+    left: 40%;
+    padding-top: 10px;
+    color: white;
+    font-size: 30px;
+}
+.ProjectTitle {
+    margin-top: 20px;
+    margin-left: 10px;
+}
+/*Ghosted Guns*/
+.GhostedGuns {
+    margin-top: 20px;
+    margin-left: 10px;
+    font-size: 20px;
+    color: rgb(219, 219, 219);
+}
+.GGTitle {
+    font-size: 25px;
+    color: white;
+}
+.GGImage {
+    width: 99%; 
+    margin-top: 10px;
+    height: auto; 
+    border-radius: 10px;
+}
+.GGPixelArt {
+    width: 99%; 
+    margin-top: 10px;
+    height: auto; 
+    image-rendering: pixelated;   
+}
+.ContactSection {
+    border-radius: 18px;
+    border: 2px solid rgba(255, 255, 255, 0.50);
+    background: linear-gradient(180deg, rgba(19, 228, 57, 0.6) 0%, rgba(26, 96, 161, 0.08) 100%);
+    backdrop-filter: blur(25px);
+    width: 50%;
+    height: 50%;
+    position:absolute;
+    top: 296%;
+    left: 40%;
+    padding-top: 10px;
+    color: white;
+    font-size: 30px;
+}
+.ContactTitle {
+    margin-top: 20px;
+    margin-left: 10px;
+}
+
