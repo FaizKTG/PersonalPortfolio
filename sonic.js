@@ -22,7 +22,7 @@ function moveRight() {
         sonic.style.backgroundImage = 'url("Images/SonicWin.gif")';
         sonic.removeEventListener("mousedown", sonicAntiSabotage);
     }
-    else if (pos > 30) sonic.style.backgroundImage = 'url("Images/SonicBall.gif")';   
+    else if (pos > 30) sonic.style.backgroundImage = 'url("Images/sonicBall.gif")';   
     
     if (!hasCollided && onCollisionEnter(sonic, usthb)) {
         hasCollided = true;
