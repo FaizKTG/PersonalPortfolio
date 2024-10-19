@@ -18,7 +18,10 @@ function moveRight() {
     if (pos < 45) requestAnimationFrame(moveRight);
     pos += 0.65; 
     // Animations
-    if (pos >= 45) sonic.style.backgroundImage = 'url("Images/SonicWin.gif")';
+    if (pos >= 45) {
+        sonic.style.backgroundImage = 'url("Images/SonicWin.gif")';
+        sonic.removeEventListener("mousedown", sonicAntiSabotage);
+    }
     else if (pos > 30) sonic.style.backgroundImage = 'url("Images/SonicBall.gif")';   
     
     if (!hasCollided && onCollisionEnter(sonic, usthb)) {
